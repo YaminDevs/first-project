@@ -28,11 +28,11 @@ render(){
   })
 
   return (
-    <>
+    <div className='app'>
       <h1> Robo Friends </h1>
       <SearchBox searchChange={this.onSearchChange}/>
       <CardList robots={filterRobots}/>
-    </>
+    </div>
   )
 }
 
