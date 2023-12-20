@@ -23,8 +23,9 @@ onSearchChange = (event) => {
 }
 
 render(){
-  const filterRobots = this.state.robots.filter(robots =>{
-    return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+  const { robots, searchfield } = this.state
+  const filterRobots = robots.filter(robot =>{
+    return robot.name.toLowerCase().includes(searchfield.toLowerCase())
   })
 
   return (
